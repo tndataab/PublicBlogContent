@@ -11,6 +11,10 @@ public static class DataProtectionExtensions
 {
     /// <summary>
     /// Configures the data protection system to persist the key-ring as a Azure Key Vault secret
+    /// 
+    /// Written by Tore Nestenius
+    /// Blog: https://nestenius.se
+    /// Business: https://www.tn-data.se
     /// </summary>
     /// <param name="builder">The <see cref="IDataProtectionBuilder"/>.</param>
     /// <param name="credentials">the Azure credentials</param>

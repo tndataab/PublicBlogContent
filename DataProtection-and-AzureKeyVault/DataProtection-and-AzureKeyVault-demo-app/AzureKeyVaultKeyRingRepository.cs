@@ -13,9 +13,10 @@ namespace TnData.AzureKeyVaultExtensions;
 /// Implementation of an IXmlRepository that will store the key ring as a secret in Azure Key Vault.
 /// In Azure Key Vault we can store about 12 keys (without key ring encryption)
 ///
-/// Created by Tore Nestenius
-/// https://www.tn-data.se
-/// /// </summary>
+/// Written by Tore Nestenius
+/// Blog: https://nestenius.se
+/// Business: https://www.tn-data.se
+/// </summary>
 public class AzureKeyVaultKeyRingRepository : IXmlRepository
 {
     private readonly ILogger<AzureKeyVaultKeyRingRepository> logger;
@@ -163,7 +164,7 @@ public class AzureKeyVaultKeyRingRepository : IXmlRepository
             //Try to pruge it and then try to set it again
             try
             {
-                logger.LogWarning("Trying to purge the secret from Azure Key Vault", keyRingName, ex.Message, ex.Status);
+                logger.LogWarning("Trying to purge the '{secretname}' secret from Azure Key Vault {ExceptionMessage}, Http.StatusCode={StatusCode}", keyRingName, ex.Message, ex.Status);
                 client.PurgeDeletedSecret(keyRingName);
             }
             catch (Exception)

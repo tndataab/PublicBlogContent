@@ -20,9 +20,11 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDataProtection()
                 .SetApplicationName("MyBusinessApplication")
+                //Uncomment if you want to protect the key at rest using Azure Key Vault
+                //.ProtectKeysWithAzureKeyVault(new Uri("https://dpapikeyvault.vault.azure.net/keys/MyDPAPIKey/c07cda675a3446f6a752a1e50c17c0c7"), new DefaultAzureCredential())
                 .PersistKeysToAzureKeyVault(new DefaultAzureCredential(),
                                             vaultUri: new Uri("https://dpapikeyvault.vault.azure.net/"),
-                                            keyRingName: "MyKeyRing");
+                                            keyRingName: "MyKeyRing2");
 
 
 builder.Services.AddSerilog();

@@ -39,7 +39,7 @@ $acr = az acr create `
         --name $ACRName `
         --sku Basic `
         --admin-enabled true `
-        | ConvertFrom-Json
+        --output json | ConvertFrom-Json
 
 $acrid = $acr.id
 Write-Host "Azure Container Registry created, id: ${acrid}"
@@ -51,4 +51,4 @@ $role = az role assignment create `
         --role "AcrPull" `
         --scope $acrid `
         --output json `
-        | ConvertFrom-Json
+        --output json | ConvertFrom-Json

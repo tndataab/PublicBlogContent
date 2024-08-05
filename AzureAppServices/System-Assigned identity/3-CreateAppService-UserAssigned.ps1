@@ -49,17 +49,12 @@ $appServiceID = $AppService.id
 Write-Host "App Service created, id: ${appServiceID}"
 
 
-# Step 4: Verify the ACR access settings  
-$settings = az webapp config show `
-    --resource-group $rgname `
-    --name $AppServiceName_container_linux `
-    --output json | ConvertFrom-Json
-Write-Host "`nThese two settings must be set for successful ACR pull:"
-Write-Host "acrUseManagedIdentityCreds='$($settings.acrUseManagedIdentityCreds)'"
-Write-Host "acrUserManagedIdentityID='$($settings.acrUserManagedIdentityId)'"
+# Print out the assigned managed identity
+$assignedIdentity = $AppService.identity.principalId
+Write-Host "`nAssigned Managed Identity: ${assignedIdentity}"
 
 
-# Step 5: Enable Application and container logging (Filesystem)
+# Step 4: Enable Application and container logging (Filesystem)
 Write-Host "`nEnabling application logging."
 $tmp = az webapp log config `
     --name $AppServiceName_container_linux `

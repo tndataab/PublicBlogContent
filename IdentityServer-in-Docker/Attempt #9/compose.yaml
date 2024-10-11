@@ -1,0 +1,20 @@
+services:
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile_Client
+    ports:
+      - "5000:80"
+    depends_on:
+      - identity
+    volumes:
+      - ./aspnetcore-dev-cert.pfx:/app/aspnetcore-dev-cert.pfx  # Mount certificate into /app
+  
+  identity:
+    build:
+      context: .
+      dockerfile: Dockerfile_Identity
+    ports:
+      - "7000:80"
+    volumes:
+      - ./aspnetcore-dev-cert.pfx:/app/aspnetcore-dev-cert.pfx  # Mount certificate into /app

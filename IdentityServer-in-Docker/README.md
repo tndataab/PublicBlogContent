@@ -23,8 +23,7 @@ his tool was developed by [Tore Nestenius](https://nestenius.se/), a seasoned .N
 * [Company](https://tn-data.se/)
 
 ## Related Azure blog posts by the author:
-* [Deploy a container to Azure App Services using Azure CLI and user-assigned managed identity](https://nestenius.se/2024/08/27/deploy-a-container-to-azure-app-services-using-azure-cli-and-user-assigned-managed-identity/)
-* [Deploy Container to Azure App Services with System-Assigned Identity](https://nestenius.se/2024/09/02/deploy-a-container-to-azure-app-services-using-a-system-assigned-identity/)
-* [DefaultAzureCredentials Under the Hood](https://nestenius.se/2024/04/18/default-azure-credentials-under-the-hood/)
-
+* [IdentityServer – IdentityResource vs. ApiResource vs. ApiScope](https://nestenius.se/2023/02/02/identityserver-identityresource-vs-apiresource-vs-apiscope/)
+* [Demystifying OpenID Connect’s State and Nonce Parameters in ASP.NET Core](https://nestenius.se/2023/12/13/demystifying-openid-connects-state-and-nonce-parameters-in-asp-net-core/)
+* [Improving ASP.NET Core Security By Putting Your Cookies On A Diet](https://nestenius.se/2024/01/22/improving-asp-net-core-security-by-putting-your-cookies-on-a-diet/)
 

@@ -1,5 +1,5 @@
 # PublicBlogContent
-This repository includes the code and resources that accompany my blog posts.
+This repository includes the code and resources that accompany my blog posts and presentations.
 
 
 ### What is included?

@@ -10,8 +10,11 @@ This repository includes the code and resources that accompany my blog posts and
 * **DataProtection-Debugger**  
   - Code for the Data Protection API Key Ring Debugger blog post.
 * **IdentityServer-in-Docker**
-  - Code for the blog where we Dockerize an IdentityServer solution for local development and debugging.
-  
+  - Code for the blog where we Dockerize an IdentityServer solution for local development and debugging
+* **Presentations an talks**
+  - Slides and source code for my public presentations.
+
+
 
 ### Further resources
 * <a href="https://nestenius.se/" target="_blank">My personal blog</a>.

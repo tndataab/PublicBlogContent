@@ -11,7 +11,7 @@ This repository includes the code and resources that accompany my blog posts and
   - Code for the Data Protection API Key Ring Debugger blog post.
 * **IdentityServer-in-Docker**
   - Code for the blog where we Dockerize an IdentityServer solution for local development and debugging
-* **Presentations an talks**
+* **Presentations**
   - Slides and source code for my public presentations.
 
 

@@ -5,6 +5,12 @@ In this talk, we'll explain how authentication works in ASP.NET Core 8, which ca
 complicated and have many different parts. We'll cover the main ideas, such as schemas, 
 handlers, ClaimsPrincipal, claims, challenges, session cookies, and more. It will be a 
 practical, in-depth look at how authentication actually works in ASP.NET Core 8. 
+
+
+The blog post mentioned in the talk can be found here:
+* <a href="https://nestenius.se/net/improving-asp-net-core-security-by-putting-your-cookies-on-a-diet/">Improving ASP.NET Core Security By Putting Your Cookies On A Diet</a>
+
+
   
 
 ### Further resources

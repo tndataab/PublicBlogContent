@@ -1,4 +1,4 @@
-# PublicBlogContent
+# Public Blog Content
 This repository includes the code and resources that accompany my blog posts and presentations.
 
 

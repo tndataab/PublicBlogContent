@@ -1,0 +1,78 @@
+﻿@model Models.CryptoModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>Protect and Unprotect demo</h3>
+
+
+
+<form asp-action="Encrypt" asp-controller="ProtectData" method="post">
+
+    <table>
+        <tr>
+            <td>
+                Purpose: <input asp-for="EncryptPurpose" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Encrypt: <input asp-for="DataToEncrypt" />
+                <input type="submit" value="Encrypt" /> 
+            </td>
+        </tr>
+        <tr>
+            <td><br /></td>
+        </tr>
+        <tr>
+            <td><br /></td>
+        </tr>
+
+    </table>
+
+
+</form>
+
+
+
+
+
+<form asp-action="Decrypt" asp-controller="ProtectData" method="post">
+    <table>
+        <tr>
+            <td>
+                Purpose: <input asp-for="DecryptPurpose" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Decrypt: <br />
+                <textarea asp-for="DataToDecrypt" rows="5" cols="80"></textarea>
+                <br />
+                <input type="submit" value="Decrypt" />
+            </td>
+        </tr>
+        <tr>
+            <td><br /></td>
+        </tr>
+        <tr>
+            <td>
+                @Model.DecryptedData
+            </td>
+        </tr>
+
+        @if(Model.Exception != null)
+        {
+            <tr>
+                <td>
+                    <b>Exception</b>
+                    <br />
+                    @Model.Exception    
+                    <br />
+               </td>
+            </tr>
+        }
+
+    </table>
+</form>
+

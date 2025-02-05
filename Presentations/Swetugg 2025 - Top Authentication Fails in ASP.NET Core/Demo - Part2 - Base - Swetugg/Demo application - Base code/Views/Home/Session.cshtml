@@ -1,0 +1,37 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Session";
+    var sessionItems = HttpContextAccessor.HttpContext.Session.Keys
+        .Select(key => new { Key = key, Value = HttpContextAccessor.HttpContext.Session.GetString(key) })
+        .ToList();
+}
+
+<h1>Session</h1>
+<p>This page writes to the Session storage.</p>
+
+@if (sessionItems.Any())
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in sessionItems)
+            {
+                <tr>
+                    <td>@item.Key</td>
+                    <td>@item.Value.ToString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No items in session.</p>
+}

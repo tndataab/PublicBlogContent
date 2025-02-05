@@ -1,0 +1,53 @@
+﻿@model List<SessionStoreEntry>
+@{
+    ViewData["Title"] = "'Active Sessions'";
+}
+
+<h1>Active Sessions</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>UserId</th>
+            <th>IPAddress</th>
+            <th>Logged in</th>
+            <th>Browser</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var session in Model)
+        {
+            <tr>
+                <td>@session.Id</td>
+                <td>@session.UserId</td>
+                <td>@session.IPAddress</td>
+                <td>@session.EntryDate.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                <td>@session.Browser</td>
+                <td>
+                    <button class="btn btn-danger" onclick="deleteSession('@session.Id')">Delete</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button class="btn btn-danger" onclick="deleteAllSessions()">Delete All</button>
+(Will not delete the current session you have with the OIDC server)
+
+@section Scripts {
+    <script>
+        function deleteSession(sessionId) {
+            if (confirm('Are you sure you want to delete this session?')) {
+                window.location.href = '@Url.Action("DeleteSession", "Session")?id=' + sessionId;
+            }
+        }
+
+        function deleteAllSessions() {
+            if (confirm('Are you sure you want to delete all sessions?')) {
+                window.location.href = '@Url.Action("DeleteAllSessions", "Session")';
+            }
+        }
+    </script>
+}

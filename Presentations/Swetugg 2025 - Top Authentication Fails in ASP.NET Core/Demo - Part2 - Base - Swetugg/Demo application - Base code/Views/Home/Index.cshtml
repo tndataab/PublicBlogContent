@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+
+<h1>Is this context secure?</h1>
+<p id="secure-status">Checking...</p>
+
+<script>
+    const isSecure = window.isSecureContext
+
+    document.getElementById('secure-status').textContent =
+        isSecure ? "Yes, this is a secure context." :
+                   "No, this is not a secure context.";
+</script>

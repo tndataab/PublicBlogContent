@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>Demo_application___Base_code</RootNamespace>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<PackageReference Include="IdentityModel" Version="7.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="9.0.0" />
+		<PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+	</ItemGroup>
+
+</Project>
+
+

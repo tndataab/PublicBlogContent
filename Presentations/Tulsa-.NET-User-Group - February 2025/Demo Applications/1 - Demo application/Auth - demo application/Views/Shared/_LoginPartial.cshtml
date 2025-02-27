@@ -1,0 +1,23 @@
+﻿
+<ul class="navbar-nav">
+    @if (User?.Identity?.IsAuthenticated ?? false)
+{
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="/User/Info" title="Manage">Hello @(User?.Identity?.Name ?? "Unknown")</a>
+    </li>
+    <li class="nav-item">
+            <form action="/User/Logout?ReturnUrl=/User/LoggedOut" method="post">
+                <button type="submit">Logout</button>
+            </form>
+    </li>
+}
+else
+{
+    <li class="nav-item">
+        <form  asp-controller="User" asp-action="Login" class="form-inline" method="get">
+            <button  type="submit" class="nav-link btn btn-link text-dark">Login</button>  
+        </form>
+      
+    </li>
+}
+</ul>

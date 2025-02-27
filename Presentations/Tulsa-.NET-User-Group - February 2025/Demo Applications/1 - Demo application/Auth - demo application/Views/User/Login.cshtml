@@ -1,0 +1,27 @@
+﻿@model LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>Login</h1>
+
+@using (Html.BeginForm("Login", "User", FormMethod.Post))
+{
+    <div class="form-group">
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" class="form-control" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <input asp-for="ReturnUrl" type="hidden" />
+
+    <button type="submit" class="btn btn-primary">Login</button>
+}
+
+
+

@@ -1,0 +1,89 @@
+﻿@using Microsoft.AspNetCore.Authentication
+@{
+    ViewData["Title"] = "Info";
+}
+
+<h1>User Info</h1>
+This page displays what we know about the current user:
+<br />
+<br />
+
+@foreach (var identity in @User.Identities)
+{
+    <h4>Identity: @(identity.Name ?? "Unknown")</h4>
+
+    <table class="table">
+        <tr>
+            <td class="col-md-2">AuthenticationType</td>
+            <td>@identity.AuthenticationType</td>
+        </tr>
+        <tr>
+            <td class="col-md-2">IsAuthenticated</td>
+            <td class="col-md-10">@identity.IsAuthenticated</td>
+        </tr> 
+        <tr>
+            <td class="col-md-2">Name</td>
+            <td class="col-md-10">@(identity.Name ?? "Unknown")</td>
+        </tr> 
+    </table>
+
+    <br />
+    <h4>Claims</h4>
+    <table class="table">
+
+        @foreach (var claim in identity.Claims)
+        {
+            <tr>
+                <td class="col-md-2">@claim.Type</td>
+                <td class="col-md-10">@claim.Value</td>
+            </tr>
+        }
+    </table>
+
+    <br />
+    <h4>Authentication property items</h4>
+    <table class="table">
+        @{
+            var authFeatures = Context.Features.Get<IAuthenticateResultFeature>();
+            var authProps = authFeatures.AuthenticateResult.Properties;
+
+            if (authProps != null)
+            {
+                foreach (var item in authProps.Items)
+                {
+                    <tr>
+                        <td class="col-md-2">@item.Key</td>
+                        <td class="col-md-10">@item.Value</td>
+                    </tr>
+                }
+            }
+        }
+    </table>
+
+    <br />
+    <br />
+    <h4>Tokens</h4>
+    <table class="table">
+        <tr>
+            <td>
+                id_token
+                <div id="jwt_io_idtokenurl"></div>
+            </td>
+            <td id="id_token" style="width: 500px; word-wrap: break-word; display: inline-block; vertical-align: top;"><br /> @ViewData["idToken"]</td>
+        </tr>
+        <tr>
+            <td>
+                access_token
+                <div id="jwt_io_accessurl"></div>
+            </td>
+            <td id="access_token" style="width: 500px; word-wrap: break-word; display: inline-block; vertical-align: top;"><br /> @ViewData["accessToken"]</td>
+        </tr>
+        <tr>
+            <td>
+                refresh_token
+                <div id="jwt_io_refreshtoken"></div>
+            </td>
+            <td id="refresh_token" style="width: 500px; word-wrap: break-word; display: inline-block; vertical-align: top;"><br /> @ViewData["refreshToken"]</td>
+        </tr>
+    </table>
+}

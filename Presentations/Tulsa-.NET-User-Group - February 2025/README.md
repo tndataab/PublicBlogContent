@@ -1,6 +1,6 @@
 # Demystifying authentication in ASP.NET Core
 
-Presented at the <a href="https://www.meetup.com/the-slc-net-user-group/" target="_blank">Salt Lake City .NET User Group</a> 2025-01-09 online.
+Presented at the <a href="https://www.meetup.com/dotnet-virtual-user-group/events/306154333/" target="_blank">Tulsa .NET User Group</a> 2025-02-28 online.
 
 Included in this folder is the presentation and the two applications used during the presentation.
 

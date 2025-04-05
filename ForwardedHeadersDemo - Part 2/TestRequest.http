@@ -1,0 +1,6 @@
+### Send a GET request to http://localhost:5000 with X-Forwarded headers
+
+GET http://localhost:5000 HTTP/1.1
+X-Forwarded-For: 123.0.123.1
+X-Forwarded-Proto: https
+X-Forwarded-Host: nestenius.se

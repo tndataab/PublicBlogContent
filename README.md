@@ -9,6 +9,8 @@ This repository includes the code and resources that accompany my blog posts and
   - Code for the Persisting the ASP.NET Core Data Protection Keys Ring in Azure Key Vault blog  post.
 * **DataProtection-Debugger**  
   - Code for the Data Protection API Key Ring Debugger blog post.
+  **ForwardedHeaders**
+  - Code for the Forwarded Headers in ASP.NET Core blog post.
 * **IdentityServer-in-Docker**
   - Code for the blog where we Dockerize an IdentityServer solution for local development and debugging.
 * **Presentations**

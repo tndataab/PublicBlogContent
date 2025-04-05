@@ -15,7 +15,7 @@ This blog post focuses on getting the application to work locally in a container
 
 
 ## About the author
-his tool was developed by [Tore Nestenius](https://nestenius.se/), a seasoned .NET instructor and consultant with over 25 years of experience in software development and architecture. With extensive expertise in .NET, Azure, and cloud computing, Tore is passionate about helping developers and organizations build robust software solutions and optimize their development processes. A frequent speaker at conferences and user groups, Tore actively shares his knowledge and insights with the community, fostering learning and growth for developers worldwide.
+This tool was developed by [Tore Nestenius](https://nestenius.se/), a seasoned .NET instructor and consultant with over 25 years of experience in software development and architecture. With extensive expertise in .NET, Azure, and cloud computing, Tore is passionate about helping developers and organizations build robust software solutions and optimize their development processes. A frequent speaker at conferences and user groups, Tore actively shares his knowledge and insights with the community, fostering learning and growth for developers worldwide.
 
 * [Stack Overflow](https://stackoverflow.com/users/68490/tore-nestenius)
 * [LinkedIn](https://www.linkedin.com/in/torenestenius/)
@@ -23,7 +23,7 @@ his tool was developed by [Tore Nestenius](https://nestenius.se/), a seasoned .N
 * [Company](https://tn-data.se/)
 
 ## Related Azure blog posts by the author:
-* [IdentityServer – IdentityResource vs. ApiResource vs. ApiScope](https://nestenius.se/2023/02/02/identityserver-identityresource-vs-apiresource-vs-apiscope/)
-* [Demystifying OpenID Connect’s State and Nonce Parameters in ASP.NET Core](https://nestenius.se/2023/12/13/demystifying-openid-connects-state-and-nonce-parameters-in-asp-net-core/)
-* [Improving ASP.NET Core Security By Putting Your Cookies On A Diet](https://nestenius.se/2024/01/22/improving-asp-net-core-security-by-putting-your-cookies-on-a-diet/)
+* [IdentityServer – IdentityResource vs. ApiResource vs. ApiScope](https://nestenius.se/net/identityserver-identityresource-vs-apiresource-vs-apiscope/)
+* [Demystifying OpenID Connect’s State and Nonce Parameters in ASP.NET Core](https://nestenius.se/net/demystifying-openid-connects-state-and-nonce-parameters-in-asp-net-core/)
+* [Improving ASP.NET Core Security By Putting Your Cookies On A Diet](https://nestenius.se/net/improving-asp-net-core-security-by-putting-your-cookies-on-a-diet/)
 

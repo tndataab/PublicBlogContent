@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForwardedHeadersDemo", "ForwardedHeadersDemo.csproj", "{0EEA3C64-C9BE-432F-8904-59AF5A893183}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForwardedHeaders - Part 1", "ForwardedHeaders - Part 1\ForwardedHeaders - Part 1.csproj", "{0EEA3C64-C9BE-432F-8904-59AF5A893183}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForwardedHeadersDemo - Part 2", "..\ForwardedHeadersDemo - Part 2\ForwardedHeadersDemo - Part 2.csproj", "{05458C79-DB6E-48CE-860A-1661AD82E997}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForwardedHeaders - Part 2", "ForwardedHeaders - Part 2\ForwardedHeaders - Part 2.csproj", "{05458C79-DB6E-48CE-860A-1661AD82E997}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

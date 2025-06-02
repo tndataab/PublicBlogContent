@@ -1,0 +1,106 @@
+﻿@using Microsoft.AspNetCore.DataProtection.KeyManagement
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container mt-4">
+    <h2>Data Protection API Key Ring Debugger</h2>
+    Written by <a href="https://nestenius.se">Tore Nestenius</a><br /><br />
+
+
+    <h4>Key generation</h4>
+    <form asp-action="CreateNewKey" method="post">
+        <input type="submit" value="Create new Key" />  (Will expire in 60 seconds)
+    </form>
+
+    <form asp-action="RevokeAllKeys" method="post">
+        <input type="submit" value="Revoke all keys" />
+    </form>
+
+    <br />
+
+    <h4>Summary</h4>
+    <table class="table">
+        <tr>
+            <td>KeyManager</td>
+            <td>@ViewData["KeyManagerName"]</td>
+        </tr>
+        <tr>
+            <td>IXmlEncryptor</td>
+            <td>@ViewData["IXmlEncryptor"]</td>
+        </tr>
+        <tr>
+            <td>IXmlRepository</td>
+            <td>@ViewData["IXmlRepository"]</td>
+        </tr>
+    </table>
+
+    <h4>Raw repository keys</h4>
+    This is what the keys look like when they are persisted. Returned directly from the XmlRepository.
+    <table class="table">
+        <tr>
+            <td><pre>@ViewData["RepositoryElements"]</pre></td>
+        </tr>
+    </table>
+
+    <h4>All keys</h4>
+    This shows the raw unprotected keys, as returned from the XmlKeyManager.
+    <table class="table">
+        @foreach (var key in (List<IKey>)ViewData["AllKeys"])
+        {
+            var descriptor = key.Descriptor;
+            var xml = descriptor.ExportToXml();
+
+            <tr>
+                <td>KeyId</td>
+                <td>@key.KeyId</td>
+            </tr>
+            <tr>
+                <td>IsRevoked</td>
+                <td>@key.IsRevoked</td>
+            </tr>
+            <tr>
+                <td>CreationDate</td>
+                <td>@key.CreationDate</td>
+            </tr>
+            <tr>
+                <td>ActivationDate</td>
+                <td>@key.ActivationDate</td>
+            </tr>
+            <tr>
+                <td>ExpirationDate</td>
+                <td>@key.ExpirationDate</td>
+            </tr>
+            <tr>
+                <td>Lifetime</td>
+                <td>
+                    @{
+                        TimeSpan lifetime = key.ExpirationDate.Subtract(key.ActivationDate);
+                    }
+                    @lifetime.TotalDays
+                    days
+                </td>
+            </tr>
+            <tr>
+                <td>Descriptor</td>
+                <td>
+                    <table class="table">
+                        <tr>
+                            <td>DeserializerType</td>
+                            <td>
+                                <pre>@xml.DeserializerType.FullName</pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>SerializedDescriptorElement</td>
+                            <td>
+                                <pre>@xml.SerializedDescriptorElement</pre>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        }
+    </table>
+</div>

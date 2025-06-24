@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "BFF Demo";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center mb-4">Backend for Frontend (BFF) Demo</h1>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h3>Authentication & API Actions</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <button type="button" class="btn btn-primary me-2" onclick="login()">Login</button>
+                            <button type="button" class="btn btn-info me-2" onclick="getSession()">Get Session</button>
+                            <button type="button" class="btn btn-secondary me-2" onclick="logout()">Logout</button>
+                            <button type="button" class="btn btn-success me-2" onclick="callLocalAPI()">Call Local API</button>
+                            <button type="button" class="btn btn-warning" onclick="callRemoteAPI()">Call Remote API</button>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4>Response:</h4>
+                            <div id="content" class="border p-3 bg-light" style="min-height: 200px; white-space: pre-wrap;">
+                                Click a button above to see the response here...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

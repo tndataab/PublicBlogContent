@@ -53,7 +53,6 @@ namespace BFFDemo_1_StartProject.Controllers
                 request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
 
                 // Send request with token
-                var httpClient = new HttpClient();
                 var response = await _httpClient.SendAsync(request);
                 var content = await response.Content.ReadAsStringAsync();
 

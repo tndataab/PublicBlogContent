@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication;
+using Duende.AccessTokenManagement.OpenIdConnect;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
@@ -12,10 +12,12 @@ namespace BFFDemo_1_StartProject.Controllers
     public class ApiController : ControllerBase
     {
         private readonly HttpClient _httpClient;
+        private readonly IUserTokenManagementService _tokenManagement;
 
-        public ApiController(HttpClient httpClient)
+        public ApiController(HttpClient httpClient, IUserTokenManagementService tokenManagement)
         {
             _httpClient = httpClient;
+            _tokenManagement = tokenManagement;
         }
 
         [HttpGet("local")]
@@ -35,25 +37,29 @@ namespace BFFDemo_1_StartProject.Controllers
         {
             try
             {
-                // Get access token from OIDC authentication
-                var accessToken = await HttpContext.GetTokenAsync("access_token");
+                // Get access token using Duende Access Token Management
+                // (handles automatic refresh)
+                var tokenResult = await _tokenManagement.GetAccessTokenAsync(User);
+                if (tokenResult.IsError)
 
-                if (string.IsNullOrEmpty(accessToken))
                 {
                     return StatusCode((int)HttpStatusCode.Unauthorized, new
                     {
-                        error = "No access token available",
-                        details = "User must be authenticated with OIDC to access remote API",
-                        statusCode = 401
+                        error = "Failed to get access token",
+                        details = $"Token error: {tokenResult.Error}",
+                        statusCode = 401,
+                        tokenManagementUsed = true
                     });
                 }
 
-                // Create HTTP request with Authorization header to our remote API
-                var request = new HttpRequestMessage(HttpMethod.Get, "https://www.secure.nu/tokenapi/gettime");
-                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+                // Create HTTP request with Authorization header
+                var url = "https://www.secure.nu/tokenapi/gettime";
+                var request = new HttpRequestMessage(HttpMethod.Get, url);
+
+                var authHeader = new AuthenticationHeaderValue("Bearer", tokenResult.AccessToken);
+                request.Headers.Authorization = authHeader;
 
                 // Send request with token
-                var httpClient = new HttpClient();
                 var response = await _httpClient.SendAsync(request);
                 var content = await response.Content.ReadAsStringAsync();
 

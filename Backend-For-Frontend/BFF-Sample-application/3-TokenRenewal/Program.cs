@@ -1,3 +1,5 @@
+using Duende.AccessTokenManagement.OpenIdConnect;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -43,6 +45,11 @@ builder.Services.AddAuthentication(options =>
         NameClaimType = Duende.IdentityModel.JwtClaimTypes.Name,
         RoleClaimType = Duende.IdentityModel.JwtClaimTypes.Role
     };
+});
+
+builder.Services.AddOpenIdConnectAccessTokenManagement(o =>
+{
+    o.RefreshBeforeExpiration = TimeSpan.FromSeconds(15);
 });
 
 builder.Services.AddAuthorization();

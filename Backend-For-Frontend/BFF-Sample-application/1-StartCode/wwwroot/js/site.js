@@ -22,52 +22,64 @@ function logout() {
 
 function getSession() {
     updateContent('Getting session details...');
-    
-    $.ajax({
-        url: '/bff/session',
-        type: 'POST',
-        contentType: 'application/json',
+
+    fetch('/bff/session', {
+        method: 'POST',
         headers: {
-        },
-        success: function(data) {
-            updateContent('Session Response:\n' + JSON.stringify(data, null, 2));
-        },
-        error: function(xhr, status, error) {
-            updateContent(`Session Error (${xhr.status}):\n${xhr.responseText || error}`, true);
         }
+    }).then(response => {
+        if (!response.ok) {
+            return response.text().then(text => {
+                throw new Error(`Session Error (${response.status}):\n${text}`);
+            });
+        }
+        return response.json();
+    }).then(data => {
+        updateContent('Session Response:\n' + JSON.stringify(data, null, 2));
+    }).catch(error => {
+        updateContent(error.message, true);
     });
 }
 
 function callLocalAPI() {
     updateContent('Calling Local API...');
-    
-    $.ajax({
-        url: '/api/Local',
-        type: 'GET',
+
+    fetch('/api/local', {
+        method: 'GET',
         headers: {
-        },
-        success: function(data) {
-            updateContent('Local API Response:\n' + JSON.stringify(data, null, 2));
-        },
-        error: function(xhr, status, error) {
-            updateContent(`Local API Error (${xhr.status}):\n${xhr.responseText || error}`, true);
         }
+    }).then(response => {
+        if (!response.ok) {
+            return response.text().then(text => {
+                throw new Error(`Local API Error (${response.status}):\n${text}`);
+            });
+        }
+        return response.json();
+    }).then(data => {
+        updateContent('Local API Response:\n' + JSON.stringify(data, null, 2));
+    }).catch(error => {
+        updateContent(error.message, true);
     });
 }
 
 function callRemoteAPI() {
     updateContent('Calling Remote API...');
-    
-    $.ajax({
-        url: '/api/remote',
-        type: 'GET',
+
+    fetch('/api/remote', {
+        method: 'GET',
         headers: {
-        },
-        success: function(data) {
-            updateContent('Remote API Response:\n' + JSON.stringify(data, null, 2));
-        },
-        error: function(xhr, status, error) {
-            updateContent(`Remote API Error (${xhr.status}):\n${xhr.responseText || error}`, true);
         }
+    }).then(response => {
+        if (!response.ok) {
+            return response.text().then(text => {
+                throw new Error(`Remote API Error (${response.status}):\n${text}`);
+            });
+        }
+        return response.json();
+    }).then(data => {
+        updateContent('Remote API Response:\n' + JSON.stringify(data, null, 2));
+    }).catch(error => {
+        updateContent(error.message, true);
     });
 }
+

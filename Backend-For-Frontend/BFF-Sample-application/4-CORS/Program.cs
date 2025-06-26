@@ -1,4 +1,7 @@
+using BFFDemo_1_StartProject.Middleware;
 using Duende.AccessTokenManagement.OpenIdConnect;
+
+Console.Title = "LocalTest.me";
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +10,20 @@ builder.Services.AddControllersWithViews();
 
 // Add HttpClient for API calls
 builder.Services.AddHttpClient();
+
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.WithOrigins("https://localhost:5001")
+              .AllowAnyMethod()
+              .WithHeaders("X-CSRF", "Content-Type")
+              .AllowCredentials()
+              // Optionally cache for 10 minutes
+              .SetPreflightMaxAge(TimeSpan.FromMinutes(10));
+    });
+});
 
 builder.Services.AddAuthentication(options =>
 {
@@ -19,7 +36,7 @@ builder.Services.AddAuthentication(options =>
     options.Cookie.SameSite = SameSiteMode.Strict;
     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
     options.Cookie.Path = "/";
-    options.ExpireTimeSpan = TimeSpan.FromMinutes(1);
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(10);
     options.SlidingExpiration = true;
     options.LoginPath = "/bff/SignInUser";
 }).AddOpenIdConnect("oidc", options =>
@@ -65,6 +82,10 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseRouting();
+
+app.UseCors();
+app.CheckForCsrfHeader();
+
 
 app.UseAuthentication();
 app.UseAuthorization();

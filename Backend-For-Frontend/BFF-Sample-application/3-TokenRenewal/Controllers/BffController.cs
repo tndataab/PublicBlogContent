@@ -20,7 +20,7 @@ namespace BFFDemo_1_StartProject.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public async Task<IActionResult> Logout()
+        public IActionResult Logout()
         {
             return SignOut(
                 new AuthenticationProperties

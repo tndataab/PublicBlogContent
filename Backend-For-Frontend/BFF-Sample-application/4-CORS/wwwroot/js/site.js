@@ -26,6 +26,7 @@ function getSession() {
     fetch('/bff/session', {
         method: 'POST',
         headers: {
+            'X-CSRF': '1'
         }
     }).then(response => {
         if (!response.ok) {
@@ -47,6 +48,7 @@ function callLocalAPI() {
     fetch('/api/local', {
         method: 'GET',
         headers: {
+            'X-CSRF': '1'
         }
     }).then(response => {
         if (!response.ok) {
@@ -68,6 +70,7 @@ function callRemoteAPI() {
     fetch('/api/remote', {
         method: 'GET',
         headers: {
+            'X-CSRF': '1'
         }
     }).then(response => {
         if (!response.ok) {

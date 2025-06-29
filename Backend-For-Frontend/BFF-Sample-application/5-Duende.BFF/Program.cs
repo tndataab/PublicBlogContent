@@ -13,6 +13,18 @@ builder.Services.AddControllersWithViews();
 // Add HttpClient for API calls
 builder.Services.AddHttpClient();
 
+
+builder.Services.AddOpenIdConnectAccessTokenManagement(o =>
+{
+    o.RefreshBeforeExpiration = TimeSpan.FromSeconds(15);
+});
+
+// Add Duende BFF services
+builder.Services.AddBff()
+    .AddRemoteApis();
+
+
+
 // Add CORS
 builder.Services.AddCors(options =>
 {
@@ -65,15 +77,6 @@ builder.Services.AddAuthentication(options =>
         RoleClaimType = Duende.IdentityModel.JwtClaimTypes.Role
     };
 });
-
-builder.Services.AddOpenIdConnectAccessTokenManagement(o =>
-{
-    o.RefreshBeforeExpiration = TimeSpan.FromSeconds(15);
-});
-
-// Add Duende BFF services
-builder.Services.AddBff()
-    .AddRemoteApis();
 
 
 builder.Services.AddAuthorization();

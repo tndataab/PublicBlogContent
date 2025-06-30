@@ -24,6 +24,7 @@ builder.Services.AddAuthentication(options =>
     options.LoginPath = "/bff/SignInUser";
 }).AddOpenIdConnect("oidc", options =>
 {
+    // ### IMPORTANT! Update these options to match your own OIDC provider
     options.Authority = "https://identityservice.secure.nu";
     options.ClientId = "localhost-bff-client";                  //30 second access token
     options.ClientSecret = "mysecret";

@@ -49,6 +49,7 @@ namespace BFFDemo_1_StartProject.Controllers
                 }
 
                 // Create HTTP request with Authorization header to our remote API
+                // Important, you need to update the URL to match your own remote API endpoint, the secure.nu domain is not always available
                 var request = new HttpRequestMessage(HttpMethod.Get, "https://www.secure.nu/tokenapi/gettime");
                 request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
 

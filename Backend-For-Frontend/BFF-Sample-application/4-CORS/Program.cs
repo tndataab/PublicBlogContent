@@ -32,6 +32,7 @@ builder.Services.AddAuthentication(options =>
 })
 .AddCookie("cookie", options =>
 {
+    // ### IMPORTANT! Update these options to match your own OIDC provider
     options.Cookie.Name = "__Host-AuthCookie";
     options.Cookie.SameSite = SameSiteMode.Strict;
     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;

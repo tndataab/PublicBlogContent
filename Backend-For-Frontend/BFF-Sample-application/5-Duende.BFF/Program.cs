@@ -55,6 +55,8 @@ builder.Services.AddAuthentication(options =>
     options.LoginPath = "/bff/SignInUser";
 }).AddOpenIdConnect("oidc", options =>
 {
+
+    // ### IMPORTANT! Update these options to match your own OIDC provider
     options.Authority = "https://identityservice.secure.nu";
     options.ClientId = "localhost-bff-client";                  //30 second access token
     options.ClientSecret = "mysecret";
@@ -104,6 +106,7 @@ app.MapStaticAssets();
 // Map BFF endpoints
 app.MapBffManagementEndpoints();
 
+// Important, you need to update the URL to match your own remote API endpoint, the secure.nu domain is not always available
 app.MapRemoteBffApiEndpoint("/api/remote", new Uri("https://www.secure.nu/tokenapi/gettime"))
     .WithAccessToken(RequiredTokenType.User);
 

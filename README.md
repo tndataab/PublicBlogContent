@@ -27,6 +27,7 @@ This repository includes the code and resources that accompany my blog posts and
 * <a href="https://tn-data.se/" target="_blank">TN Datakonsult AB</a>, my personal company.
 * <a href="https://www.linkedin.com/in/torenestenius/" target="_blank">Linkedin profile</a>, fee free to connect!
 * <a href="https://stackoverflow.com/users/68490/tore-nestenius" target="_blank">Stack Overflow profile</a>
+* <a href="https://www.meetup.com/net-skane/" target="_blank">.NET Skåne</a>
 
  
  

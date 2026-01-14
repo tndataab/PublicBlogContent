@@ -4,6 +4,8 @@ using Serilog;
 using Serilog.Events;
 using System.Globalization;
 
+Console.Title = "IdentityService";
+
 Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Information()
     .Enrich.FromLogContext()

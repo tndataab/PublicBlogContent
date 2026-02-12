@@ -19,6 +19,8 @@ This repository includes the code and resources that accompany my blog posts and
   - Code for the Forwarded Headers in ASP.NET Core blog post.
 * **\IdentityServer-in-Docker**
   - Code for the blog where we Dockerize an IdentityServer solution for local development and debugging.
+ * **\MyCodingAgent.NET**
+   - Code for the presentation How Does a Coding Agent Work.
 
 
 

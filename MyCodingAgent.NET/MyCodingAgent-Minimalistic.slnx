@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="MyCodingAgent/MyCodingAgent.csproj" />
+  <Project Path="MyCodingAgent-Minimalistic\MyCodingAgent-Minimalistic.csproj" />
+</Solution>

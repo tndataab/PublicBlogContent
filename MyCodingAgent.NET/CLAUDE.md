@@ -27,15 +27,30 @@ dotnet run
 
 ## Configuration
 
-API keys are stored using .NET User Secrets. To configure:
+The `AnthropicClient` default constructor reads the API key from the `ANTHROPIC_API_KEY` environment variable.
 
-```bash
-cd MyCodingAgent  # or MyCodingAgent-Minimalistic
-dotnet user-secrets init
-dotnet user-secrets set "Anthropic:ApiKey" "your-api-key-here"
+**PowerShell (current session only):**
+```powershell
+$env:ANTHROPIC_API_KEY = "your-api-key-here"
 ```
 
-The `AnthropicClient` automatically reads from user secrets when instantiated.
+**PowerShell (permanent, user-level):**
+```powershell
+[Environment]::SetEnvironmentVariable("ANTHROPIC_API_KEY", "your-api-key-here", "User")
+```
+
+**Command Prompt (current session only):**
+```cmd
+set ANTHROPIC_API_KEY=your-api-key-here
+```
+
+**Command Prompt (permanent, user-level):**
+```cmd
+setx ANTHROPIC_API_KEY "your-api-key-here"
+```
+Note: `setx` sets the variable for future sessions. You'll need to open a new terminal for it to take effect.
+
+Run the app from the same terminal where you set the variable.
 
 ## Architecture
 
@@ -75,7 +90,7 @@ The `ResolvePath()` method (line 201-205) ensures all file paths stay within the
 
 **MyCodingAgent-Minimalistic** (Minimalistic Version):
 - Uses only `Console.WriteLine()` for output
-- Minimal dependencies (only Anthropic SDK and User Secrets - no Spectre.Console)
+- Minimal dependencies (only Anthropic SDK - no Spectre.Console)
 - No requestNumber tracking, no truncation helpers, no fancy formatting
 - ~210 lines of clean, readable code showing core functionality
 - Better for understanding how agents work at a fundamental level

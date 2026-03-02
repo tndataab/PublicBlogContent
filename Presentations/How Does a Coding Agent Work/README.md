@@ -2,9 +2,11 @@
 
 Thanks for attending the talk! Here are the slides and links to everything mentioned.
 
-## Slides
+## Slides, Code and links
 
-* [How does a Coding Agent Work.pdf](How%20does%20an%20Coding%20Agent%20Work.pdf)
+* [Presentation.pdf](How%20does%20an%20Coding%20Agent%20Work.pdf)
+* [Minimal Coding Agent in C# source coe](https://github.com/tndataab/PublicBlogContent/tree/main/MyCodingAgent.NET)
+* [Mechanical Sympathy](https://www.infoq.com/presentations/mechanical-sympathy/)
 
 ## What to Do Next
 
@@ -22,6 +24,7 @@ I post regularly about .NET, Azure, and web security. Feel free to connect:
 
 **4. Interested in a talk or training at your company?**
 I offer workshops and training on .NET, Azure, authentication, and AI topics. If you want to bring this (or another topic) to your team or event, feel free to [get in touch](https://tn-data.se/contact/)!
+
 
 ## Further Resources
 

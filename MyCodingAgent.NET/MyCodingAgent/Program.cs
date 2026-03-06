@@ -19,7 +19,7 @@ while (true)
 
     var response = await agent.SendMessage(input);
 
-    // LLM chains tools together (read file -> edit file -> test code)
+    // Does the model want to use a tool?
     while (agent.WantsToUseTool(response))
         response = await agent.ProcessToolCalls(response);
 

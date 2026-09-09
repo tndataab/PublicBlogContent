@@ -1,0 +1,81 @@
+@{
+    ViewData["Title"] = "User Info";
+}
+
+<div class="demo-page">
+    <h1>User info</h1>
+    <p class="text-muted">What this app knows about the current user, from the signed-in cookie.</p>
+
+    @if (User?.Identity?.IsAuthenticated != true)
+    {
+        <div class="alert alert-warning">
+            <strong>Not signed in.</strong>
+            No authentication is configured yet, so every field below is empty.
+        </div>
+    }
+
+    @foreach (var identity in User?.Identities ?? Enumerable.Empty<System.Security.Claims.ClaimsIdentity>())
+    {
+        <h2 class="h5 mt-4">@(identity.Name ?? "Unknown")</h2>
+        <dl class="row">
+            <dt class="col-sm-3">AuthenticationType</dt>
+            <dd class="col-sm-9">@identity.AuthenticationType</dd>
+
+            <dt class="col-sm-3">IsAuthenticated</dt>
+            <dd class="col-sm-9">@identity.IsAuthenticated</dd>
+
+            <dt class="col-sm-3">Name</dt>
+            <dd class="col-sm-9">@(identity.Name ?? "Unknown")</dd>
+        </dl>
+
+        <h3 class="h6 mt-3">Claims</h3>
+        <table class="table table-bordered param-table">
+            @foreach (var claim in identity.Claims)
+            {
+                <tr>
+                    <th>@claim.Type</th>
+                    <td>@claim.Value</td>
+                </tr>
+            }
+        </table>
+
+        <h3 class="h6 mt-3">Tokens</h3>
+        <table class="table table-bordered param-table">
+            <tr>
+                <th>id_token<br /><span data-jwt-link="id_token"></span></th>
+                <td id="id_token" class="token-value">@ViewData["idToken"]</td>
+            </tr>
+            <tr>
+                <th>access_token<br /><span data-jwt-link="access_token"></span></th>
+                <td id="access_token" class="token-value">@ViewData["accessToken"]</td>
+            </tr>
+            <tr>
+                <th>refresh_token<br /><span data-jwt-link="refresh_token"></span></th>
+                <td id="refresh_token" class="token-value">@ViewData["refreshToken"]</td>
+            </tr>
+        </table>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        // The token values are written into the table by Razor, which HTML-encodes them.
+        // Reading them back out of the DOM as text means no token value is ever injected
+        // into this script, so a hostile token cannot break out and run as code.
+        document.querySelectorAll("[data-jwt-link]").forEach(function (placeholder) {
+            var cell = document.getElementById(placeholder.dataset.jwtLink);
+            var token = cell ? cell.textContent.trim() : "";
+
+            if (token.length === 0) {
+                return;
+            }
+
+            var link = document.createElement("a");
+            link.href = "https://jwt.io/#value=" + encodeURIComponent(token);
+            link.target = "_blank";
+            link.rel = "noopener";
+            link.textContent = "jwt.io";
+            placeholder.appendChild(link);
+        });
+    </script>
+}

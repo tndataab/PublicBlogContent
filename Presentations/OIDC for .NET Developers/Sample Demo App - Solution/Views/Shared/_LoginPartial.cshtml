@@ -1,0 +1,31 @@
+<ul class="navbar-nav">
+    @if (User?.Identity?.IsAuthenticated ?? false)
+    {
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="/User/Info" title="View your info">Hello @(User?.Identity?.Name ?? "Unknown")</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Logout</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                    <form asp-controller="User" asp-action="Logout" method="post">
+                        <button type="submit" class="dropdown-item" title="Sign out here and at the OpenID Provider">OpenID Connect logout</button>
+                    </form>
+                </li>
+            </ul>
+        </li>
+    }
+    else
+    {
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Login</a>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                    <form asp-controller="User" asp-action="Login" method="post">
+                        <button type="submit" class="dropdown-item" title="Log in through the OpenID Provider">OpenID Connect login</button>
+                    </form>
+                </li>
+            </ul>
+        </li>
+    }
+</ul>

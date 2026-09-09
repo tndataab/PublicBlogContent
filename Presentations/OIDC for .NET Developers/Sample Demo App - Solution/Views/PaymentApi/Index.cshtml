@@ -1,0 +1,30 @@
+@model Starter_Project.Models.PaymentApiModel
+@{
+    ViewData["Title"] = "Call the Payment API";
+}
+
+<div class="demo-page">
+    <h1>Call the payment API</h1>
+    <p class="text-muted">
+        Sends the access token from your sign-in cookie to
+        <code>https://paymentapi.secure.nu/payments</code> as an
+        <code>Authorization: Bearer</code> header. That endpoint requires
+        <code>scope=payment</code> and <code>role=finance</code> in the token.
+    </p>
+
+    <form asp-controller="PaymentApi" asp-action="GetPayments" method="post">
+        <button type="submit" class="btn btn-primary">Call /payments</button>
+    </form>
+
+    @if (!string.IsNullOrEmpty(Model.AccessToken))
+    {
+        <h2 class="h5 mt-4">Token sent</h2>
+        <pre class="token-value">@Model.AccessToken</pre>
+    }
+
+    @if (!string.IsNullOrEmpty(Model.Result))
+    {
+        <h2 class="h5 mt-4">Response</h2>
+        <pre class="token-value">@Model.Result</pre>
+    }
+</div>

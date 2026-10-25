@@ -5,7 +5,7 @@ including slides and demo code.
 
 ## About the Speaker
 
-I'm Tore Nestenius, an independent consultant, trainer, and software developer based in Helsingborg, Sweden. With over two decades of experience, I specialize in .NET development, Azure, and web security; with a particular focus on authentication, IdentityServer, OAuth, and OpenID Connect. I'm a Microsoft .NET MVP and co-founder of the .NET Skåne community meetup group.
+I'm Tore Nestenius, an independent consultant, trainer, and software developer based in Göteborg, Sweden. With over two decades of experience, I specialize in .NET development, Azure, and web security; with a particular focus on authentication, IdentityServer, OAuth, and OpenID Connect. I'm a Microsoft .NET MVP and co-founder of the .NET Skåne community meetup group.
 
 Interested in having me speak at your event or run a workshop or training at your company? Feel free to <a href="https://tn-data.se/contact/" target="_blank">get in touch</a>!
 

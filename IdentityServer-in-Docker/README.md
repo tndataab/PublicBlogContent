@@ -14,6 +14,14 @@ This blog post focuses on getting the application to work locally in a container
 
 
 
+## The blog series
+
+* [IdentityServer in Docker Containers - Part 1](https://nestenius.se/net/identityserver-in-docker-containers-part-1/)
+* [IdentityServer in Docker Containers: Networking (Part 2)](https://nestenius.se/net/identityserver-in-docker-containers-part-2/)
+* [IdentityServer in Docker Containers: HTTPS and SameSite (Part 3)](https://nestenius.se/net/identityserver-in-docker-containers-part-3/)
+* [IdentityServer In Docker Containers – Handle Logout (Part 4)](https://nestenius.se/net/identityserver-in-docker-containers-part-4/)
+* [IdentityServer: What It Is and Where to Start](https://nestenius.se/identityserver/)
+
 ## About the author
 This tool was developed by [Tore Nestenius](https://nestenius.se/), a seasoned .NET instructor and consultant with over 25 years of experience in software development and architecture. With extensive expertise in .NET, Azure, and cloud computing, Tore is passionate about helping developers and organizations build robust software solutions and optimize their development processes. A frequent speaker at conferences and user groups, Tore actively shares his knowledge and insights with the community, fostering learning and growth for developers worldwide.
 
@@ -22,8 +30,12 @@ This tool was developed by [Tore Nestenius](https://nestenius.se/), a seasoned .
 * [Blog](https://nestenius.se/)
 * [Company](https://tn-data.se/)
 
-## Related Azure blog posts by the author:
+## Related blog posts by the author
 * [IdentityServer – IdentityResource vs. ApiResource vs. ApiScope](https://nestenius.se/net/identityserver-identityresource-vs-apiresource-vs-apiscope/)
 * [Demystifying OpenID Connect’s State and Nonce Parameters in ASP.NET Core](https://nestenius.se/net/demystifying-openid-connects-state-and-nonce-parameters-in-asp-net-core/)
 * [Improving ASP.NET Core Security By Putting Your Cookies On A Diet](https://nestenius.se/net/improving-asp-net-core-security-by-putting-your-cookies-on-a-diet/)
+
+## Learn more
+
+* [Getting Started: OpenID Connect](https://dometrain.com/course/getting-started-openid-connect/), my video course on Dometrain. It explains how OAuth 2 and OpenID Connect work at the protocol level, including the OpenID Provider, claims and scopes, and sign-out.
 

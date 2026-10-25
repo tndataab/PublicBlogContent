@@ -22,6 +22,9 @@ applications.
 ## Further Resources
 
 * [Demystifying OpenID Connect's State & Nonce Parameters in ASP.NET Core](https://nestenius.se/net/demystifying-openid-connects-state-and-nonce-parameters-in-asp-net-core/)
+* [Debugging OpenID Connect Claim Problems in ASP.NET Core](https://nestenius.se/net/missing-openid-connect-claims-in-asp-net-core/)
+* [OpenID Connect and OAuth: What They Are and Where to Start](https://nestenius.se/openid-connect/)
+* [Getting Started: OpenID Connect](https://dometrain.com/course/getting-started-openid-connect/), my video course on Dometrain. It explains how OAuth 2 and OpenID Connect work at the protocol level: tokens, signing and the flows. It is not .NET specific.
 * [My personal blog](https://nestenius.se/)
 * [TN Datakonsult AB](https://tn-data.se/), my consulting company
 * [LinkedIn profile](https://www.linkedin.com/in/torenestenius/), feel free to connect!

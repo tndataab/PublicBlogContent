@@ -7,6 +7,7 @@ Thanks for attending the talk! Here you will find everything mentioned: slides, 
 - Slides: [Presentation.pdf](Backend-for-Frontend%20in%20ASP.NET-Core.pdf)
 - Code: [Sample Demo Application](https://github.com/tndataab/PublicBlogContent/tree/main/Backend-For-Frontend)
 - Blog: [Implementing the BFF Pattern in ASP.NET Core for SPAs](https://nestenius.se/net/implementing-bff-pattern-in-asp-net-core-for-spas/)
+- Overview: [The BFF Pattern: What It Is and Where to Start](https://nestenius.se/bff/), with all seven parts of the series
 - Spec: [OAuth 2.0 for Browser-Based Applications (IETF)](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps)
 
 
@@ -43,11 +44,13 @@ I post regularly about .NET, Azure, and web security. Feel free to connect or re
 
 **4. Interested in a workshop or training at your company?**
 
-I offer in-house workshops and training on .NET, Azure, authentication, and AI. If you want to bring this (or another topic) to your team or conference, [get in touch](https://tn-data.se/contact/).
+I offer in-house workshops and training on .NET, Azure and authentication, and I give talks on AI. If you want to bring this (or another topic) to your team or conference, [get in touch](https://tn-data.se/contact/).
 
 
 ## Further Resources
 
+- [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/), my video course on Dometrain. It covers the cookie handler and cookie and ticket lifetimes, which is the cookie session side of the talk.
+- [Getting Started: OpenID Connect](https://dometrain.com/course/getting-started-openid-connect/), my video course on Dometrain. It explains the OAuth 2 and OpenID Connect flows and tokens at the protocol level, including why the Implicit Flow was deprecated for browser-based apps.
 - [My personal blog](https://nestenius.se/)
 - [TN Datakonsult AB](https://tn-data.se/) (my consulting company)
 - [Stack Overflow profile](https://stackoverflow.com/users/68490/tore-nestenius)

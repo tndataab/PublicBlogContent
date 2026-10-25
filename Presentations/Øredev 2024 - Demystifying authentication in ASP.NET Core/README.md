@@ -13,6 +13,11 @@ The blog post mentioned in the talk can be found here:
 
   
 
+### More reading
+* <a href="https://nestenius.se/net/exploring-what-is-inside-the-asp-net-core-cookies/" target="_blank">Exploring what is inside the ASP.NET Core cookies</a>
+* <a href="https://nestenius.se/net/debugging-cookie-problems/" target="_blank">Debugging cookie problems in ASP.NET Core</a>
+* <a href="https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/" target="_blank">Getting Started: Authentication and Authorization in .NET</a>, my video course on Dometrain. It explains what happens inside ASP.NET Core: the ClaimsPrincipal, the authentication middleware and the cookie handler.
+
 ### Further resources
 * <a href="https://nestenius.se/" target="_blank">My personal blog</a>
 * <a href="https://tn-data.se/" target="_blank">TN Datakonsult</a>, my personal company

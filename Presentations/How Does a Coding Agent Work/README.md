@@ -29,7 +29,7 @@ I post regularly about .NET, Azure, and web security. Feel free to connect:
 
 **4. Interested in a talk or training at your company?**
 
-I offer workshops and training on .NET, Azure, authentication, and AI topics. If you want to bring this (or another topic) to your team or event, feel free to [get in touch](https://tn-data.se/contact/)!
+I give talks on .NET, Azure, authentication and AI, and I run workshops and training on .NET, Azure and authentication. If you want to bring this (or another topic) to your team or event, feel free to [get in touch](https://tn-data.se/contact/)!
 
 
 ## Further Resources

@@ -15,4 +15,13 @@ Client ID, Client Secret and the Tenant ID. Set the following environment variab
 5. Optionally, you can encrypt the keys using a separate encryption key from Azure Key Vault.
 
 
-See my blog posts for more details at https://nestenius.se 
+## Blog posts
+
+* [Persisting the ASP.NET Core Data Protection Key Ring in Azure Key Vault](https://nestenius.se/net/persisting-the-asp-net-core-data-protection-key-ring-in-azure-key-vault/), the post for this demo
+* [Introducing the Data Protection API Key Ring Debugger](https://nestenius.se/net/introducing-the-data-protection-api-key-ring-debugger/), a tool to inspect the key ring and the Data Protection setup
+
+## Learn more
+
+* [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/), my video course on Dometrain. It covers the authentication middleware and the cookie handler, and has a lesson on Data Protection.
+
+See my blog for more at https://nestenius.se

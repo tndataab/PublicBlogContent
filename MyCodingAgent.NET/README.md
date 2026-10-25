@@ -154,7 +154,7 @@ The agent restricts all file operations to a designated working folder, preventi
 
 - **Framework**: .NET 10.0
 - **Language Model**: Claude Sonnet 4.5
-- **API Client**: [Anthropic C# SDK v12](https://github.com/anthropics/anthropic-sdk-dotnet)
+- **API Client**: [Anthropic C# SDK v12](https://github.com/anthropics/anthropic-sdk-csharp)
 - **Max Tokens**: 4096 (to limit costs and prevent runaway token usage)
 - **Tool Execution**: Synchronous, sequential
 
@@ -168,8 +168,8 @@ The agent restricts all file operations to a designated working folder, preventi
 
 ## Additional Resources
 
-- [Anthropic API Documentation](https://docs.anthropic.com/)
-- [Claude Tool Use Guide](https://docs.anthropic.com/en/docs/tool-use)
+- [Anthropic API Documentation](https://platform.claude.com/docs/en/home)
+- [Claude Tool Use Guide](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview)
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
 - [Spectre.Console Documentation](https://spectreconsole.net/)
 

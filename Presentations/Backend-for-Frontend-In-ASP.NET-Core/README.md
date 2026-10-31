@@ -52,6 +52,6 @@ I offer in-house workshops and training on .NET, Azure and authentication, and I
 - [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/), my video course on Dometrain. It covers the cookie handler and cookie and ticket lifetimes, which is the cookie session side of the talk.
 - [Getting Started: OpenID Connect](https://dometrain.com/course/getting-started-openid-connect/), my video course on Dometrain. It explains the OAuth 2 and OpenID Connect flows and tokens at the protocol level, including why the Implicit Flow was deprecated for browser-based apps.
 - [My personal blog](https://nestenius.se/)
-- [TN Datakonsult AB](https://tn-data.se/) (my consulting company)
-- [Stack Overflow profile](https://stackoverflow.com/users/68490/tore-nestenius)
+- [TN-Data](https://tn-data.se/) (my consulting company)
+- [Dometrain author page](https://dometrain.com/author/tore-nestenius/), my video courses
 - [.NET Skåne](https://www.meetup.com/net-skane/) (the local .NET meetup group in southern Sweden)

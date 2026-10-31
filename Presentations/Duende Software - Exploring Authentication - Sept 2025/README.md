@@ -17,8 +17,8 @@ This repository includes the presentation, code and resources mentioned during m
 
 ## Further Resources
 * <a href="https://nestenius.se/" target="_blank">My personal blog</a>
-* <a href="https://tn-data.se/" target="_blank">TN Datakonsult AB</a>, my personal company
+* <a href="https://tn-data.se/" target="_blank">TN-Data</a>, my consulting company
+* <a href="https://dometrain.com/author/tore-nestenius/" target="_blank">Dometrain author page</a>, my video courses
 * <a href="https://www.linkedin.com/in/torenestenius/" target="_blank">Linkedin profile</a>, fee free to connect!
-* <a href="https://stackoverflow.com/users/68490/tore-nestenius" target="_blank">Stack Overflow profile</a>
 
  

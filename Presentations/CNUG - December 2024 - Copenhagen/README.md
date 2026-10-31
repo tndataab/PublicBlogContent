@@ -18,9 +18,9 @@ hosted by the Copenhagen .NET User Group (CNUG) and 3C, on 10 December 2024.
 * [Introducing the Cloud Debugger for Azure](https://nestenius.se/azure/introducing-the-cloud-debugger-for-azure/)
 * [Discovering .NET codebases using code coverage and NCrunch](https://nestenius.se/net/discovering-net-codebases-using-code-coverage-and-ncrunch/)
 * [My personal blog](https://nestenius.se/)
-* [TN Datakonsult AB](https://tn-data.se/), my consulting company
+* [TN-Data](https://tn-data.se/), my consulting company
+* [Dometrain author page](https://dometrain.com/author/tore-nestenius/), my video courses
 * [LinkedIn profile](https://www.linkedin.com/in/torenestenius/), feel free to connect!
-* [Stack Overflow profile](https://stackoverflow.com/users/68490/tore-nestenius)
 * [.NET Skåne](https://www.meetup.com/net-skane/), the local .NET meetup group in southern Sweden
 
 Interested in a talk or training at your company? I run in-house workshops on .NET, Azure,

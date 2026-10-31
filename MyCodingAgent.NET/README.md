@@ -2,6 +2,8 @@
 
 This repository contains demo code for the presentation **"How Does a Coding Agent Work?"** - a hands-on exploration of the core mechanics behind AI coding agents.
 
+The code is presented together with the [Coding Agent Explorer](https://github.com/tndata/CodingAgentExplorer), my open-source .NET tool that shows what a coding agent such as Claude Code sends to the model: every API request, tool call and token count, live in a dashboard. Read more in the blog post [Introducing the Coding Agent Explorer (.NET)](https://nestenius.se/ai/introducing-the-coding-agent-explorer-net/).
+
 ## About the Presentation
 
 Coding agents are increasingly used to automate software tasks, yet how they actually work is often treated as a black box. This talk breaks a coding agent down into its core mechanics: how it is structured, how it communicates with a language model, and how a text-only model can read and modify real source code.
@@ -161,13 +163,15 @@ The agent restricts all file operations to a designated working folder, preventi
 ## Further Resources
 
 * <a href="https://nestenius.se/" target="_blank">My personal blog</a>
-* <a href="https://tn-data.se/" target="_blank">TN Datakonsult AB</a>, my personal company
+* <a href="https://tn-data.se/" target="_blank">TN-Data</a>, my consulting company
+* <a href="https://dometrain.com/author/tore-nestenius/" target="_blank">Dometrain author page</a>, my video courses
 * <a href="https://www.linkedin.com/in/torenestenius/" target="_blank">LinkedIn profile</a>, feel free to connect!
-* <a href="https://stackoverflow.com/users/68490/tore-nestenius" target="_blank">Stack Overflow profile</a>
 * <a href="https://www.meetup.com/net-skane/" target="_blank">.NET Skåne</a> - Local .NET user group
 
 ## Additional Resources
 
+- [Coding Agent Explorer on GitHub](https://github.com/tndata/CodingAgentExplorer), the open-source tool for inspecting a coding agent's API calls
+- [Introducing the Coding Agent Explorer (.NET)](https://nestenius.se/ai/introducing-the-coding-agent-explorer-net/), the blog post
 - [Anthropic API Documentation](https://platform.claude.com/docs/en/home)
 - [Claude Tool Use Guide](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview)
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)

@@ -28,9 +28,9 @@ live coding.
 * [Debugging cookie problems in ASP.NET Core](https://nestenius.se/net/debugging-cookie-problems/)
 * [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/), my video course on Dometrain. It explains what happens inside ASP.NET Core: the ClaimsPrincipal, the authentication middleware and the cookie handler.
 * [My personal blog](https://nestenius.se/)
-* [TN Datakonsult AB](https://tn-data.se/), my consulting company
+* [TN-Data](https://tn-data.se/), my consulting company
+* [Dometrain author page](https://dometrain.com/author/tore-nestenius/), my video courses
 * [LinkedIn profile](https://www.linkedin.com/in/torenestenius/), feel free to connect!
-* [Stack Overflow profile](https://stackoverflow.com/users/68490/tore-nestenius)
 * [.NET Skåne](https://www.meetup.com/net-skane/), the local .NET meetup group in southern Sweden
 
 Interested in a talk or training at your company? I run in-house workshops on .NET, Azure,

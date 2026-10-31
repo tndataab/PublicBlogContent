@@ -26,9 +26,9 @@ applications.
 * [OpenID Connect and OAuth: What They Are and Where to Start](https://nestenius.se/openid-connect/)
 * [Getting Started: OpenID Connect](https://dometrain.com/course/getting-started-openid-connect/), my video course on Dometrain. It explains how OAuth 2 and OpenID Connect work at the protocol level: tokens, signing and the flows. It is not .NET specific.
 * [My personal blog](https://nestenius.se/)
-* [TN Datakonsult AB](https://tn-data.se/), my consulting company
+* [TN-Data](https://tn-data.se/), my consulting company
+* [Dometrain author page](https://dometrain.com/author/tore-nestenius/), my video courses
 * [LinkedIn profile](https://www.linkedin.com/in/torenestenius/), feel free to connect!
-* [Stack Overflow profile](https://stackoverflow.com/users/68490/tore-nestenius)
 * [.NET Skåne](https://www.meetup.com/net-skane/), the local .NET meetup group in southern Sweden
 
 Interested in a talk or training at your company? I run in-house workshops on .NET, Azure,

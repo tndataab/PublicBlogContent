@@ -35,6 +35,10 @@ I post regularly about .NET, Azure, web security and AI. Feel free to connect:
 
 I give talks on .NET, Azure, authentication and AI, and I run workshops and training on .NET, Azure and authentication. If you want to bring this (or another topic) to your team or event, feel free to [get in touch](https://tn-data.se/contact/)!
 
+## About the Author
+
+Tore Nestenius is a Microsoft .NET MVP and a senior .NET architect and developer based in Göteborg, Sweden. He specializes in authentication, identity and security in ASP.NET Core, including OpenID Connect, OAuth and Duende IdentityServer, and is the author of two Dometrain courses on the subject. Tore speaks at conferences such as NDC, Øredev and Swetugg, and explores how AI coding agents work under the hood with his open-source Coding Agent Explorer.
+
 ## Further Resources
 
 * <a href="https://nestenius.se/" target="_blank">My personal blog</a>

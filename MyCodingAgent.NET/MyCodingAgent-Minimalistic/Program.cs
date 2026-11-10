@@ -2,6 +2,8 @@ using Anthropic;
 using Anthropic.Models.Messages;
 using System.Text.Json;
 
+// Assumes the Anthropic API key is found in the ANTHROPIC_API_KEY environment variable.
+// To route the requests through Coding Agent Explorer, also set ANTHROPIC_BASE_URL=http://localhost:8888
 
 // Sample prompt:
 // Create a simple fizz buzz application in C#, with program.cs and project file. Do use .NET 10.
@@ -52,7 +54,7 @@ public class MySmartAgent
 
     public async Task<Message> SendMessage(string userText)
     {
-        context.Add(new() { Role = Role.User, Content = userText });
+        context.Add(new UserMessageParam { Content = userText });
         var response = await CallClaude();
         AddToContext(response);
         return response;
@@ -99,7 +101,7 @@ public class MySmartAgent
         }
 
         // Send tool results back to Claude
-        context.Add(new() { Role = Role.User, Content = new MessageParamContent(toolResults) });
+        context.Add(new UserMessageParam { Content = toolResults });
         var nextResponse = await CallClaude();
         AddToContext(nextResponse);
         return nextResponse;
@@ -174,11 +176,9 @@ public class MySmartAgent
 
     public void AddToContext(Message response)
     {
-        context.Add(new()
+        context.Add(new AssistantMessageParam
         {
-            Role = Role.Assistant,
-            Content = new MessageParamContent(
-                response.Content.Select(ToContentBlockParam).ToList())
+            Content = response.Content.Select(ToContentBlockParam).ToList()
         });
     }
 

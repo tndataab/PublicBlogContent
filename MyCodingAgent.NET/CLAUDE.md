@@ -8,8 +8,8 @@ This repository contains demo code for the presentation **"How Does a Coding Age
 
 Two variants of the same coding agent built with the Anthropic SDK:
 
-- **MyCodingAgent**: Full-featured version (~295 lines) with Spectre.Console UI for rich terminal output - best for demos and development
-- **MyCodingAgent-Minimalistic**: Lightweight version (~210 lines) with minimal dependencies - best for understanding core concepts
+- **MyCodingAgent**: Full-featured version (~300 lines) with Spectre.Console UI for rich terminal output - best for demos and development
+- **MyCodingAgent-Minimalistic**: Lightweight version (under 200 lines) with minimal dependencies - best for understanding core concepts
 
 Both implement an agentic loop where Claude can read, write, and list files in a sandboxed working folder. The goal is to show how simple a functional coding agent can be.
 
@@ -56,7 +56,7 @@ Run the app from the same terminal where you set the variable.
 
 ### Core Components
 
-**Agentic Loop** (Program.cs lines 8-18):
+**Agentic Loop** (top of Program.cs):
 - Gets user input
 - Sends message to Claude via `SendMessage()`
 - Processes tool calls in a loop until Claude stops requesting tools
@@ -65,7 +65,7 @@ Run the app from the same terminal where you set the variable.
 - Maintains conversation context across multiple turns
 - Manages API calls to Claude
 - Executes three sandboxed tools: `read_file`, `write_file`, `list_files`
-- All file operations are restricted to `./output` folder (created automatically)
+- All file operations are restricted to the working folder (`c:\MyAgent` or `c:\MyAgentMini`, created automatically)
 
 ### Tool Execution Flow
 
@@ -76,7 +76,7 @@ Run the app from the same terminal where you set the variable.
 
 ### Path Security
 
-The `ResolvePath()` method (line 201-205) ensures all file paths stay within the working folder:
+The `ResolvePath()` method ensures all file paths stay within the working folder:
 - Takes relative path as input
 - Resolves to absolute path within working folder
 - Returns `null` if path attempts to escape sandbox
@@ -92,7 +92,7 @@ The `ResolvePath()` method (line 201-205) ensures all file paths stay within the
 - Uses only `Console.WriteLine()` for output
 - Minimal dependencies (only Anthropic SDK - no Spectre.Console)
 - No requestNumber tracking, no truncation helpers, no fancy formatting
-- ~210 lines of clean, readable code showing core functionality
+- Under 200 lines of clean, readable code showing core functionality
 - Better for understanding how agents work at a fundamental level
 
 ## Model Configuration
@@ -122,7 +122,7 @@ This code demonstrates how coding agents work mechanically:
 2. **Tool Use Pattern**: How Claude requests tools via `ToolUseBlock` and receives results via `ToolResultBlockParam`
 3. **Context Management**: How conversation history is maintained across stateless API calls
 4. **Sandboxing**: How `ResolvePath()` restricts file operations to working folder
-5. **Simplicity**: A functional coding agent in ~210 lines (minimalistic) or ~295 lines (with UI)
+5. **Simplicity**: A functional coding agent in under 200 lines (minimalistic) or ~300 lines (with UI)
 
 ## Common Extensions for Live Demos
 

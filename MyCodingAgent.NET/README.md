@@ -26,7 +26,7 @@ The feature-rich version with [Spectre.Console](https://spectreconsole.net/) UI,
 - Rich console output for debugging
 
 ### ⚡ MyCodingAgent-Minimalistic
-The bare-bones version stripped down to **~210 lines** of code, demonstrating:
+The bare-bones version stripped down to **under 200 lines** of code, demonstrating:
 - How compact a functional coding agent can be
 - Core agentic loop pattern
 - Essential tool execution without visual flourishes
@@ -47,21 +47,38 @@ The bare-bones version stripped down to **~210 lines** of code, demonstrating:
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd MyCodingAgent.NET
+   git clone https://github.com/tndataab/PublicBlogContent.git
+   cd PublicBlogContent/MyCodingAgent.NET
    ```
 
 2. **Configure API Key**
+
+   The agent reads the key from the `ANTHROPIC_API_KEY` environment variable.
+   ```powershell
+   $env:ANTHROPIC_API_KEY = "your-api-key-here"   # PowerShell
+   ```
    ```bash
-   cd MyCodingAgent  # or MyCodingAgent-Minimalistic
-   dotnet user-secrets init
-   dotnet user-secrets set "Anthropic:ApiKey" "your-api-key-here"
+   export ANTHROPIC_API_KEY="your-api-key-here"   # bash
    ```
 
-3. **Run**
+3. **Run** (from the same terminal)
    ```bash
+   cd MyCodingAgent  # or MyCodingAgent-Minimalistic
    dotnet run
    ```
+
+### See the Requests in Coding Agent Explorer
+
+To see every request the agent sends, run it through the [Coding Agent Explorer](https://github.com/tndata/CodingAgentExplorer). Start the Explorer, then point the agent at its proxy before `dotnet run`:
+
+```powershell
+$env:ANTHROPIC_BASE_URL = "http://localhost:8888"   # PowerShell
+```
+```bash
+export ANTHROPIC_BASE_URL="http://localhost:8888"   # bash
+```
+
+The Anthropic SDK picks up `ANTHROPIC_BASE_URL` automatically, so no code changes are needed. Open the dashboard at `http://localhost:5000` to follow the requests live.
 
 ### Try It Out
 
@@ -100,7 +117,7 @@ The agent exposes three simple tools to Claude:
 2. **write_file** - Write content to a file (creates directories as needed)
 3. **list_files** - List all files and directories in a path
 
-All file operations are sandboxed to a working folder (`./output` by default).
+All file operations are sandboxed to a working folder: `c:\MyAgent` for the full version and `c:\MyAgentMini` for the minimalistic one. Change `workFolder` at the top of `Program.cs` to use another folder.
 
 ### Message Flow
 
@@ -146,7 +163,7 @@ The agent restricts all file operations to a designated working folder, preventi
 
 | Feature | MyCodingAgent | MyCodingAgent-Minimalistic |
 |---------|---------------|----------------------------|
-| Lines of Code | ~295 | ~210 |
+| Lines of Code | ~300 | Under 200 |
 | Dependencies | Anthropic SDK, Spectre.Console | Anthropic SDK only |
 | Output | Rich formatted tables | Plain console output |
 | Debugging | Request/response tracking | Minimal output |
@@ -156,7 +173,7 @@ The agent restricts all file operations to a designated working folder, preventi
 
 - **Framework**: .NET 10.0
 - **Language Model**: Claude Sonnet 4.5
-- **API Client**: [Anthropic C# SDK v12](https://github.com/anthropics/anthropic-sdk-csharp)
+- **API Client**: [Anthropic C# SDK](https://github.com/anthropics/anthropic-sdk-csharp)
 - **Max Tokens**: 4096 (to limit costs and prevent runaway token usage)
 - **Tool Execution**: Synchronous, sequential
 
@@ -167,15 +184,12 @@ The agent restricts all file operations to a designated working folder, preventi
 * <a href="https://dometrain.com/author/tore-nestenius/" target="_blank">Dometrain author page</a>, my video courses
 * <a href="https://www.linkedin.com/in/torenestenius/" target="_blank">LinkedIn profile</a>, feel free to connect!
 * <a href="https://www.meetup.com/net-skane/" target="_blank">.NET Skåne</a> - Local .NET user group
-
-## Additional Resources
-
-- [Coding Agent Explorer on GitHub](https://github.com/tndata/CodingAgentExplorer), the open-source tool for inspecting a coding agent's API calls
-- [Introducing the Coding Agent Explorer (.NET)](https://nestenius.se/ai/introducing-the-coding-agent-explorer-net/), the blog post
-- [Anthropic API Documentation](https://platform.claude.com/docs/en/home)
-- [Claude Tool Use Guide](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview)
-- [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
-- [Spectre.Console Documentation](https://spectreconsole.net/)
+* [Coding Agent Explorer on GitHub](https://github.com/tndata/CodingAgentExplorer), the open-source tool for inspecting a coding agent's API calls
+* [Introducing the Coding Agent Explorer (.NET)](https://nestenius.se/ai/introducing-the-coding-agent-explorer-net/), the blog post
+* [Anthropic API Documentation](https://platform.claude.com/docs/en/home)
+* [Claude Tool Use Guide](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview)
+* [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
+* [Spectre.Console Documentation](https://spectreconsole.net/)
 
 ## License
 
@@ -183,4 +197,4 @@ This demo code is provided for educational purposes as part of the presentation 
 
 ---
 
-For more talks and presentations, visit my [Talks page](https://nestenius.se/).
+For more about my talks and training, visit [nestenius.se](https://nestenius.se/).

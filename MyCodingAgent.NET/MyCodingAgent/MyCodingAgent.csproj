@@ -8,9 +8,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Anthropic" Version="12.*" />
-		<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
-		<PackageReference Include="Spectre.Console" Version="0.54.0" />
+		<PackageReference Include="Anthropic" Version="13.7.0" />
+		<PackageReference Include="Spectre.Console" Version="0.57.2" />
 	</ItemGroup>
 
 </Project>

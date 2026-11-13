@@ -76,6 +76,6 @@ This code was written by [Tore Nestenius](https://nestenius.se/), a Microsoft .N
 * [LinkedIn](https://www.linkedin.com/in/torenestenius/)
 * [Blog](https://nestenius.se/)
 * [Company](https://tn-data.se/)
-* [Dometrain Author](https://dometrain.com/author/tore-nestenius/)
+* [Dometrain Author](https://dometrain.com/author/tore-nestenius/?ref=tore-nestenius)
 
 

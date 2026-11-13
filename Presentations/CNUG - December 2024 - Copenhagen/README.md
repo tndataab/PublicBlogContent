@@ -19,7 +19,7 @@ hosted by the Copenhagen .NET User Group (CNUG) and 3C, on 10 December 2024.
 * [Discovering .NET codebases using code coverage and NCrunch](https://nestenius.se/net/discovering-net-codebases-using-code-coverage-and-ncrunch/)
 * [My personal blog](https://nestenius.se/)
 * [TN-Data](https://tn-data.se/), my consulting company
-* [Dometrain author page](https://dometrain.com/author/tore-nestenius/), my video courses
+* [Dometrain author page](https://dometrain.com/author/tore-nestenius/?ref=tore-nestenius), my video courses
 * [LinkedIn profile](https://www.linkedin.com/in/torenestenius/), feel free to connect!
 * [.NET Skåne](https://www.meetup.com/net-skane/), the local .NET meetup group in southern Sweden
 

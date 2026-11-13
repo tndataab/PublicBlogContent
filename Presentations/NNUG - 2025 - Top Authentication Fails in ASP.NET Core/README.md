@@ -38,11 +38,11 @@ Part 2, authentication problems:
 * [Introducing the Data Protection API Key Ring Debugger](https://nestenius.se/net/introducing-the-data-protection-api-key-ring-debugger/)
 * [Improving ASP.NET Core Security By Putting Your Cookies On A Diet](https://nestenius.se/net/improving-asp-net-core-security-by-putting-your-cookies-on-a-diet/)
 * [Troubleshooting JwtBearer authentication issues in ASP.NET Core](https://nestenius.se/net/troubleshooting-jwtbearer-authentication-problems-in-asp-net-core/)
-* [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/), my video course on Dometrain. It covers the cookie handler and cookie and ticket lifetimes, and gives a short introduction to the Data Protection API.
-* [Getting Started: OpenID Connect](https://dometrain.com/course/getting-started-openid-connect/), my video course on Dometrain. It explains how OAuth 2 and OpenID Connect work at the protocol level, including sign-out and the OpenID Provider. It is not .NET specific.
+* [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/?ref=tore-nestenius), my video course on Dometrain. It covers the cookie handler and cookie and ticket lifetimes, and gives a short introduction to the Data Protection API.
+* [Getting Started: OpenID Connect](https://dometrain.com/course/getting-started-openid-connect/?ref=tore-nestenius), my video course on Dometrain. It explains how OAuth 2 and OpenID Connect work at the protocol level, including sign-out and the OpenID Provider. It is not .NET specific.
 * [My personal blog](https://nestenius.se/)
 * [TN-Data](https://tn-data.se/), my consulting company
-* [Dometrain author page](https://dometrain.com/author/tore-nestenius/), my video courses
+* [Dometrain author page](https://dometrain.com/author/tore-nestenius/?ref=tore-nestenius), my video courses
 * [LinkedIn profile](https://www.linkedin.com/in/torenestenius/), feel free to connect!
 * [.NET Skåne](https://www.meetup.com/net-skane/), the local .NET meetup group in southern Sweden
 

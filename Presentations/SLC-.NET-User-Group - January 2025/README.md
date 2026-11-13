@@ -14,7 +14,7 @@ In this talk, we explain how authentication works in ASP.NET Core 8, which can b
 * <a href="https://www.linkedin.com/in/torenestenius/" target="_blank">LinkedIn</a> 
 * <a href="https://nestenius.se/" target="_blank">Blog</a>
 * <a href="https://tn-data.se/" target="_blank">Training company</a>
-* <a href="https://dometrain.com/author/tore-nestenius/" target="_blank">Dometrain author page</a>, my video courses
+* <a href="https://dometrain.com/author/tore-nestenius/?ref=tore-nestenius" target="_blank">Dometrain author page</a>, my video courses
 
 
 ## Links mentioned in the presentation
@@ -26,4 +26,4 @@ In this talk, we explain how authentication works in ASP.NET Core 8, which can b
 ## More reading
 * <a href="https://nestenius.se/net/exploring-what-is-inside-the-asp-net-core-cookies/" target="_blank">Exploring what is inside the ASP.NET Core cookies</a>
 * <a href="https://nestenius.se/net/persisting-the-asp-net-core-data-protection-key-ring-in-azure-key-vault/" target="_blank">Persisting the ASP.NET Core Data Protection Key Ring in Azure Key Vault</a>
-* <a href="https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/" target="_blank">Getting Started: Authentication and Authorization in .NET</a>, my video course on Dometrain. It explains what happens inside ASP.NET Core: the ClaimsPrincipal, the authentication middleware and the cookie handler.
+* <a href="https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/?ref=tore-nestenius" target="_blank">Getting Started: Authentication and Authorization in .NET</a>, my video course on Dometrain. It explains what happens inside ASP.NET Core: the ClaimsPrincipal, the authentication middleware and the cookie handler.

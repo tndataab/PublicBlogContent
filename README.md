@@ -31,6 +31,6 @@ This repository contains the code and resources that accompany my blog posts and
 ## Further Resources
 * <a href="https://nestenius.se/" target="_blank">My personal blog</a>.
 * <a href="https://tn-data.se/" target="_blank">TN-Data</a>, my consulting company.
-* <a href="https://dometrain.com/author/tore-nestenius/" target="_blank">Dometrain author page</a>, my video courses
+* <a href="https://dometrain.com/author/tore-nestenius/?ref=tore-nestenius" target="_blank">Dometrain author page</a>, my video courses
 * <a href="https://www.linkedin.com/in/torenestenius/" target="_blank">Linkedin profile</a>, feel free to connect!
 * <a href="https://www.meetup.com/net-skane/" target="_blank">.NET Skåne</a>

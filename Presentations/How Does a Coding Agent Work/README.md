@@ -43,5 +43,5 @@ Tore Nestenius is a Microsoft .NET MVP and a senior .NET architect and developer
 
 * <a href="https://nestenius.se/" target="_blank">My personal blog</a>
 * <a href="https://tn-data.se/" target="_blank">TN-Data</a>, my consulting company
-* <a href="https://dometrain.com/author/tore-nestenius/" target="_blank">Dometrain author page</a>, my video courses
+* <a href="https://dometrain.com/author/tore-nestenius/?ref=tore-nestenius" target="_blank">Dometrain author page</a>, my video courses
 * <a href="https://www.meetup.com/net-skane/" target="_blank">.NET Skåne</a>

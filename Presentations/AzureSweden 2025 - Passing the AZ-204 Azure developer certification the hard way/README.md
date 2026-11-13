@@ -23,7 +23,7 @@ This holder includes the presentation, code and resources mentioned during my we
 ## Further Resources
 * <a href="https://nestenius.se/" target="_blank">My personal blog</a>
 * <a href="https://tn-data.se/" target="_blank">TN-Data</a>, my consulting company
-* <a href="https://dometrain.com/author/tore-nestenius/" target="_blank">Dometrain author page</a>, my video courses
+* <a href="https://dometrain.com/author/tore-nestenius/?ref=tore-nestenius" target="_blank">Dometrain author page</a>, my video courses
 * <a href="https://tn-data.se/courses/" target="_blank">Training Workshops</a>
 * <a href="https://www.linkedin.com/in/torenestenius/" target="_blank">Linkedin profile</a>, fee free to connect!
 

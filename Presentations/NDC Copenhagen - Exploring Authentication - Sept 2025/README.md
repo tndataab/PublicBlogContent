@@ -26,10 +26,10 @@ live coding.
 * [Improving ASP.NET Core Security By Putting Your Cookies On A Diet](https://nestenius.se/net/improving-asp-net-core-security-by-putting-your-cookies-on-a-diet/)
 * [Exploring what is inside the ASP.NET Core cookies](https://nestenius.se/net/exploring-what-is-inside-the-asp-net-core-cookies/)
 * [Debugging cookie problems in ASP.NET Core](https://nestenius.se/net/debugging-cookie-problems/)
-* [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/), my video course on Dometrain. It explains what happens inside ASP.NET Core: the ClaimsPrincipal, the authentication middleware and the cookie handler.
+* [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/?ref=tore-nestenius), my video course on Dometrain. It explains what happens inside ASP.NET Core: the ClaimsPrincipal, the authentication middleware and the cookie handler.
 * [My personal blog](https://nestenius.se/)
 * [TN-Data](https://tn-data.se/), my consulting company
-* [Dometrain author page](https://dometrain.com/author/tore-nestenius/), my video courses
+* [Dometrain author page](https://dometrain.com/author/tore-nestenius/?ref=tore-nestenius), my video courses
 * [LinkedIn profile](https://www.linkedin.com/in/torenestenius/), feel free to connect!
 * [.NET Skåne](https://www.meetup.com/net-skane/), the local .NET meetup group in southern Sweden
 

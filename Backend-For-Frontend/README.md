@@ -17,8 +17,8 @@ The sample application is built up in steps: the start code, adding OpenID Conne
 
 ## Video courses by the author
 
-* [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/), my video course on Dometrain. It covers the authentication middleware and the cookie handler.
-* [Getting Started: OpenID Connect](https://dometrain.com/course/getting-started-openid-connect/), my video course on Dometrain. It explains how OAuth 2 and OpenID Connect work at the protocol level, including the OpenID Provider, claims and scopes, and sign-out.
+* [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/?ref=tore-nestenius), my video course on Dometrain. It covers the authentication middleware and the cookie handler.
+* [Getting Started: OpenID Connect](https://dometrain.com/course/getting-started-openid-connect/?ref=tore-nestenius), my video course on Dometrain. It explains how OAuth 2 and OpenID Connect work at the protocol level, including the OpenID Provider, claims and scopes, and sign-out.
 
 ## About the author
 
@@ -27,6 +27,6 @@ This code was written by [Tore Nestenius](https://nestenius.se/), a Microsoft .N
 * [LinkedIn](https://www.linkedin.com/in/torenestenius/)
 * [Blog](https://nestenius.se/)
 * [Company](https://tn-data.se/)
-* [Dometrain Author](https://dometrain.com/author/tore-nestenius/)
+* [Dometrain Author](https://dometrain.com/author/tore-nestenius/?ref=tore-nestenius)
 
 For more details, visit my blog at https://nestenius.se

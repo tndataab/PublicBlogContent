@@ -27,7 +27,7 @@ Client ID, Client Secret and the Tenant ID. Set the following environment variab
 
 ## Video courses by the author
 
-* [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/), my video course on Dometrain. It covers the authentication middleware and the cookie handler, and gives a short introduction to the Data Protection API.
+* [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/?ref=tore-nestenius), my video course on Dometrain. It covers the authentication middleware and the cookie handler, and gives a short introduction to the Data Protection API.
 
 ## About the author
 
@@ -36,6 +36,6 @@ This code was written by [Tore Nestenius](https://nestenius.se/), a Microsoft .N
 * [LinkedIn](https://www.linkedin.com/in/torenestenius/)
 * [Blog](https://nestenius.se/)
 * [Company](https://tn-data.se/)
-* [Dometrain Author](https://dometrain.com/author/tore-nestenius/)
+* [Dometrain Author](https://dometrain.com/author/tore-nestenius/?ref=tore-nestenius)
 
 See my blog for more at https://nestenius.se

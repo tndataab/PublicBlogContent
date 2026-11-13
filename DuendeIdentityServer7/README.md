@@ -10,8 +10,8 @@ This folder contains the demo code for setting up Duende IdentityServer 7.4.4 in
 
 ## Video courses by the author
 
-* [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/), my video course on Dometrain. It covers the authentication middleware and the cookie handler.
-* [Getting Started: OpenID Connect](https://dometrain.com/course/getting-started-openid-connect/), my video course on Dometrain. It explains how OAuth 2 and OpenID Connect work at the protocol level, including the OpenID Provider, claims and scopes.
+* [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/?ref=tore-nestenius), my video course on Dometrain. It covers the authentication middleware and the cookie handler.
+* [Getting Started: OpenID Connect](https://dometrain.com/course/getting-started-openid-connect/?ref=tore-nestenius), my video course on Dometrain. It explains how OAuth 2 and OpenID Connect work at the protocol level, including the OpenID Provider, claims and scopes.
 
 ## About the author
 
@@ -20,6 +20,6 @@ This code was written by [Tore Nestenius](https://nestenius.se/), a Microsoft .N
 * [LinkedIn](https://www.linkedin.com/in/torenestenius/)
 * [Blog](https://nestenius.se/)
 * [Company](https://tn-data.se/)
-* [Dometrain Author](https://dometrain.com/author/tore-nestenius/)
+* [Dometrain Author](https://dometrain.com/author/tore-nestenius/?ref=tore-nestenius)
 
 See my blog posts for more details at https://nestenius.se and for training workshops visit https://tn-data.se/courses/

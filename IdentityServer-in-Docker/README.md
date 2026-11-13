@@ -28,7 +28,7 @@ This code was written by [Tore Nestenius](https://nestenius.se/), a Microsoft .N
 * [LinkedIn](https://www.linkedin.com/in/torenestenius/)
 * [Blog](https://nestenius.se/)
 * [Company](https://tn-data.se/)
-* [Dometrain Author](https://dometrain.com/author/tore-nestenius/)
+* [Dometrain Author](https://dometrain.com/author/tore-nestenius/?ref=tore-nestenius)
 
 ## Related blog posts by the author
 * [Duende IdentityServer 7: A Complete Setup Guide for ASP.NET Core](https://nestenius.se/net/duende-identityserver-7-a-complete-setup-guide-for-asp-net-core/), setting up Duende IdentityServer 7 from scratch. The demo code is in the [DuendeIdentityServer7](../DuendeIdentityServer7) folder.
@@ -38,6 +38,6 @@ This code was written by [Tore Nestenius](https://nestenius.se/), a Microsoft .N
 
 ## Video courses by the author
 
-* [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/), my video course on Dometrain. It covers the authentication middleware and the cookie handler.
-* [Getting Started: OpenID Connect](https://dometrain.com/course/getting-started-openid-connect/), my video course on Dometrain. It explains how OAuth 2 and OpenID Connect work at the protocol level, including the OpenID Provider, claims and scopes, and sign-out.
+* [Getting Started: Authentication and Authorization in .NET](https://dometrain.com/course/getting-started-authentication-and-authorization-in-dotnet/?ref=tore-nestenius), my video course on Dometrain. It covers the authentication middleware and the cookie handler.
+* [Getting Started: OpenID Connect](https://dometrain.com/course/getting-started-openid-connect/?ref=tore-nestenius), my video course on Dometrain. It explains how OAuth 2 and OpenID Connect work at the protocol level, including the OpenID Provider, claims and scopes, and sign-out.
 
